@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Facebook app</title>
+        <style>
+            body{
+                background-image: url(f3.avif);
+                object-fit: scale-down;
+                background-repeat: no-repeat;
+                background-size: 100%;
+                overflow: hidden;
+            }
+            #loginform{
+            background-color: azure;
+            position: absolute;
+            top: 50%;
+            left: 73%;
+            transform: translate(-50%, -50%);
+            border-radius: 15px;
+            width: 400px;
+            height: 290px;
+            box-shadow: 0 0 20px rgba(0,0,0,1);
+        }
+        input[type=text],input[type=password]{
+            caret-color: orangered;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+              width: 70%;
+      padding: 12px 20px;
+      margin: 3px 0;
+      display: inline-block;
+      border: 3px solid #ccc;
+      border-radius: 15px;
+      box-sizing: border-box;
+      text-align: center;
+      margin-left: 15%;
+      margin-bottom: 15px;
+    }
+    h2{
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size:xx-large;
+        color:royalblue;
+        text-align: center;
+    }
+    input[type=submit] {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      width: 50%;
+      background-color:blue;
+      filter: contrast(1.75);
+      color: white;
+      padding: 15px 15px;
+      margin-left: 89px;
+      border: none;
+      border-radius: 4px;
+      cursor:pointer;
+    }
+    /* .button:is(:hover,:focus)
+    {
+        outline-offset: 3px;
+    } */
+    #cna{
+        
+        width: 20%;
+      background-color:green;
+      color: white;
+      padding: 15px 15px;
+      margin:600px;
+      margin-left: 63%;
+      margin-top: 530px;
+      border: none;
+      border-radius: 10px;
+      cursor:pointer;
+    }
+        </style>
+    </head>
+    <body>
+        <div id="loginform">
+            <form name="lgform" action="valid1.php" method="POST">
+            <h2>Facebook Login</h2>
+            <input type="text" name="uname" required placeholder="Enter mobile/username">
+            <input type="password" name="pass" required placeholder="Enter password">
+            <input type="submit" name="login" class="button
+            "value="Login">
+            </form>
+        </div>
+        <form name="suform"  action="signup.html">
+        <input type="submit" id="cna" value="Create Account">  
+        </form>
+    </body>
+</html>
