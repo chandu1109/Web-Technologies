@@ -1,0 +1,295 @@
+<html>
+<head>
+<title>Student Registration Form</title>
+<style>
+	
+	body
+	{
+	 color: #fff;
+	 background-image: url('Images/img16.jpg');
+	 background-size: cover;
+	}
+	table
+	{
+		background: black;
+		border-color: 1px solid #2E94E3;
+		border-radius: 10px;
+		opacity: 0.9	;
+	}
+	font
+	{
+		color: whitesmoke;
+	}
+</style>
+</head>
+ 
+<body>
+<h3 align="center"><font>STUDENT REGISTRATION FORM</font></h3>
+<form action="a2.php" method="post">
+<table align="center" cellpadding = "10" border="2px" bgcolor="" >
+<tr>
+<td>FIRST NAME</td>
+<td><input type="text" name="First_Name" maxlength="30" placeholder="FIRST NAME" />
+</td>
+</tr>
+ 
+<tr>
+<td>LAST NAME</td>
+<td><input type="text" name="Last_Name" placeholder="LAST NAME"maxlength="30"/>
+</td>
+</tr>
+ 
+<tr>
+<td>DATE OF BIRTH</td>
+ 
+<td>
+<select name="Birthday_day" id="Birthday_Day">
+<option value="-1">Day:</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+ 
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+ 
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+ 
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+ 
+<option value="31">31</option>
+</select>
+ 
+<select id="Birthday_Month" name="Birthday_Month">
+<option value="-1">Month:</option>
+<option value="January">Jan</option>
+<option value="February">Feb</option>
+<option value="March">Mar</option>
+<option value="April">Apr</option>
+<option value="May">May</option>
+<option value="June">Jun</option>
+<option value="July">Jul</option>
+<option value="August">Aug</option>
+<option value="September">Sep</option>
+<option value="October">Oct</option>
+<option value="November">Nov</option>
+<option value="December">Dec</option>
+</select>
+ 
+<select name="Birthday_Year" id="Birthday_Year">
+ 
+<option value="-1">Year:</option>
+<option value="2023">2023</option>
+<option value="2022">2022</option>
+<option value="2021">2021</option>
+<option value="2020">2020</option>
+<option value="2019">2019</option>
+<option value="2018">2018</option>
+<option value="2017">2017</option>
+<option value="2016">2016</option>
+<option value="2015">2015</option>
+<option value="2014">2014</option>
+<option value="2013">2013</option>
+<option value="2012">2012</option>
+<option value="2011">2011</option>
+<option value="2010">2010</option>
+<option value="2009">2009</option>
+<option value="2008">2008</option>
+<option value="2007">2007</option>
+<option value="2006">2006</option>
+<option value="2005">2005</option>
+<option value="2004">2004</option>
+<option value="2003">2003</option>
+<option value="2002">2002</option>
+<option value="2001">2001</option>
+<option value="2000">2000</option>
+ 
+</select>
+</td>
+</tr>
+ 
+<tr>
+<td>EMAIL ID</td>
+<td><input type="email" name="Email_Id" maxlength="100" placeholder="Mail Id"/></td>
+</tr>
+ 
+<tr>
+<td>MOBILE NUMBER</td>
+<td>
+<input type="text" name="Mobile_Number" maxlength="10" placeholder="NUMBER" />
+</td>
+</tr>
+ 
+
+<tr>
+<td>GENDER</td>
+<td>
+<input type="radio" name="Gender" value="Male">Male</input>
+<input type="radio" name="Gender" value="Female" />Female</input>
+</td>
+</tr>
+ 
+<tr>
+<td>ADDRESS <br /><br /><br /></td>
+<td><textarea name="Address" rows="4" cols="30"></textarea></td>
+</tr>
+ 
+
+<tr>
+<td>District</td>
+<!--<td><input type="text" name="City" maxlength="30" />-->
+	<td>
+	<select id="district" name="district">
+<option value="-1">Choose District</option>
+<option value="visakhapatnam">visakhapatnam</option>
+<option value="Vijawada">Vijawada</option>
+<option value="Tirupati">Tirupati</option>
+<option value="Kakinada">kakinada</option>
+<option value="Guntur">Guntur</option>
+<option value="Kadapa">Kadapa</option>
+<option value="Kurnool">Kurnool</option>
+<option value="Srikakulam">Srikakulam</option>
+<option value="Vizianagram">Viziangaram</option>
+<option value="Krishna">Krishna</option>
+<option value="Rajamundry">Rajamundry</option>
+</select>
+
+</td>
+</tr>
+ 
+<tr>
+<td>PIN CODE</td>
+<td><input type="text" name="Pin_Code" maxlength="6" />
+</td>
+</tr>
+ 
+<tr>
+<td>STATE</td>
+<td><input type="text" name="State" maxlength="30" value="Andhra Pradesh	" />
+
+</td>
+</tr>
+ <tr>
+<td colspan="2" align="center" >
+	<h4>Web options</h4>
+</td>
+</tr>		
+<!----- Country ---------------------------------------------------------->
+<tr>
+<td>COUNTRY</td>
+<td><input type="text" name="Country" value="India" /></td>
+</tr>
+ 
+<tr>
+<td>College Preferences</td>
+	<td>
+	<select id="College" name="college">
+<option value="-1">Choose College</option>
+<option value="anits">ANITS</option>
+<option value="gvp">GVP</option>
+<option value="Vigan">VIGAN</option>
+<option value="gitam">GITAM</option>
+<option value="au">AU</option>
+<option value="jntuk">JNTUK</option>
+<option value="klu">KLU</option>
+<option value="aditya">ADITYA</option>
+<option value="anu">ANU</option>
+<option value="raghu">REC</option>
+<option value="vr-siddartha">VRSE</option>
+</select>
+
+</td>
+</tr>
+ <tr>
+<td>COURSES<br />APPLIED FOR</td>
+<td>
+<input type="radio" name="COURSES" value="CSE">CSE</input>
+<input type="radio" name="COURSES" value="IT">IT</input>
+<input type="radio" name="COURSES" value="ECE">ECE</input>
+<input type="radio" name="COURSES" value="EEE">EEE</input>
+<input type="radio" name="COURSES" value="EEE">MECH</input>
+<input type="radio" name="COURSES" value="EEE">CSD</input>
+
+</td>
+</tr>
+ 
+<tr>
+<td>QUALIFICATION <br /><br /><br /><br /><br /><br /><br /></td>
+ 
+<td>
+<table>
+ 
+<tr>
+<td align="center"><b>	Sl.No.</b></td>
+<td align="center"><b>Examination</b></td>
+<td align="center"><b>Percentage</b></td>
+<td align="center"><b>Year of Passing</b></td>
+</tr>
+ 
+<tr>
+<td>1</td>
+<td>Class X</td>
+<td><input type="text" name="ClassX_Percentage" maxlength="30" /></td>
+<td><input type="text" name="ClassX_YrOfPassing" maxlength="30" /></td>
+</tr>
+ 
+<tr>
+<td>2</td>
+<td>Class XII</td>
+<td><input type="text" name="ClassXII_Percentage" maxlength="30" /></td>
+<td><input type="text" name="ClassXII_YrOfPassing" maxlength="30" /></td>
+</tr>
+ 
+<tr>
+<td>3</td>
+<td>Graduation</td>
+<td><input type="text" name="Graduation_Percentage" maxlength="30" /></td>
+<td><input type="text" name="Graduation_YrOfPassing" maxlength="30" /></td>
+</tr>
+  
+<tr>
+<td></td>
+<td></td>
+<td align="center">(10 char max)</td>
+<td align="center">(upto 2 decimal)</td>
+</tr>
+</table>
+ 
+</td>
+</tr>
+ <tr>
+<td colspan="2" align="center">
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+</td>
+</tr>
+
+
+</table>
+ 
+</form>
+ 
+</body>
+</html>

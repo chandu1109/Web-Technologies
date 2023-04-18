@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bill Generation of Cri</title>
+	<link rel="stylesheet" type="text/css" href="bill.css">
+</head>
+<body>
+<div class="pricelist">
+   <h1>Sports Kits</h1>
+    <table>
+      <tr>
+      	<th>Image</th>
+      	<th>Name</th>
+      	<th>Price</th>
+        </tr>
+        <tr>
+        	<td><img src="Images/cricket.jpeg" alt="Cricket" width="100" height="100"></td>
+        	<td>Cricket</td>
+        	<td>Rs.1200</td>
+
+        </tr>
+        <tr><td><img src="Images/badminton.jpg" alt="Badminton" width="100" height="100"></td>
+        	<td>Badminton</td>
+        	<td>Rs.1000</td></tr>
+        	<tr>
+        	<td><img src="Images/football.jpg" alt="FootBall" width="100" height="100"></td>
+        	<td>Football</td>
+        	<td>Rs.800</td>
+        	</tr>
+        	<tr>
+        		<td><img src="Images/basketball.jpg" alt="BasketBall" width="100" height="100"></td>
+        	<td>Basket Ball</td>
+        	<td>Rs.500</td>
+       	</tr>
+       	<tr>
+       		<td><img src="Images/chess.jpg" alt="Chess" width="100" height="100"></td>
+        	<td>Chess</td>
+        	<td>Rs.350</td>
+       	</tr>
+
+    </table>
+  </div>
+  <br>
+  <br>
+  <br>
+
+  <form class="bill1">
+    <select id="sf">
+  <option selected value = "cricket">Cricket</option>
+  <option value = "badminton">Badminton</option>
+  <option value = "football">Football</option>
+  <option value = "basketball">Basket Ball</option>
+  <option value = "chess">Chess</option>
+</select>
+    <input type="text" id="entrybox" pattern="\d*" placeholder="Input Number of Kits">&nbsp;<b>Quantity</b>&nbsp;&nbsp;
+    <input type="button" value="ADD T0 CART" class="mybutton" id="getme">
+  </form>
+  <br><br>
+  <textarea class="bill" cols="100" rows="8" id="writeme"></textarea>
+ <br><br>
+  <input type="submit" value="CLEAR TEXTAREA" class="mybutton bill3" id="clr">
+  <input type="submit" value="PAY BILL" class="mybutton bill2" id="out">
+  <script type="text/javascript" src="bill1.js"></script>
+</body>
+</html>
+        

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Number Guessing Game</title>
+    <style>
+      #container{
+      margin:auto;
+      margin-top: 100px;
+      border-radius: 20px;
+      border:2  px solid lightBlue;
+      font-size:30px;
+      padding:10px;
+      text-align:center;
+      height:350px;
+      width:600px;
+      /*background-image: url('Images/img26.jpg');
+      */background-size: cover;
+      background-color:#10101E;
+    }
+    p{
+      color:white;
+    }
+    #guess
+    {
+      
+      width: 170px;
+      height: 23px;
+    }
+    #outputText
+    {
+      color: blueviolet;
+    }
+    body
+    {
+      background-image: url('Images/img14.jpg');
+      background-size: cover;
+    }
+    </style>
+  </head>
+  <body bgcolor=" #10101E;">
+    <div id="container">
+    
+    <p>Guess a number between 1 and 100:</p>
+    <p id="outputText">Enter a number below</p>
+    <input  id="guess" />
+    <button onclick="checkGuess()">Guess</button>
+    <p id="message"></p>
+    </div>
+    <script>
+var numberToGuess = Math.floor(Math.random() * 100) + 1;
+var guessesAllowed = 5;
+function checkGuess() {
+  var guess = parseInt(document.getElementById("guess").value);
+  if (isNaN(guess)) {
+    document.getElementById("message").innerHTML =
+      "Please enter a valid number between 1 and 100.";
+  } else if (guess < 1 || guess > 100) {
+    document.getElementById("message").innerHTML =
+      "Please enter a number between 1 and 100.";
+  } else {
+    if (guess === numberToGuess) {
+      document.getElementById("message").innerHTML =
+        "Congratulations! You guessed the correct number.";
+    } else if (guess < numberToGuess) {
+            document.getElementById("message").innerHTML =
+        "Sorry, you guessed too low. Please try again.";
+    } else {
+
+      document.getElementById("message").innerHTML =
+        "Sorry, you guessed too high.          Please try again.";
+    }
+    guessesAllowed--;
+
+        if (guessesAllowed === 0) {
+      document.getElementById("message").innerHTML +=
+        " You have run out of guesses. The correct number was " +
+        numberToGuess +
+        ".";
+    } else {
+      document.getElementById("message").innerHTML +=
+        " You have " + guessesAllowed + " guesses left.";
+    }
+  }
+}
+
+// var numberToGuess = Math.floor(Math.random() * 100) + 1;
+// var guessesAllowed = 5;
+// function checkGuess() {
+//    var guess = parseInt(document.getElementById("guess").value);
+
+//    if (guess === numberToGuess) {
+//     document.getElementById("message").innerHTML =
+//       "Congratulations! You guessed the correct number.";
+//   } else {
+//      guessesAllowed--;
+
+//      if (guessesAllowed === 0) {
+//       document.getElementById("message").innerHTML =
+//         "Sorry, you have run out of guesses. The correct number was " +
+//         numberToGuess +
+//         ".";
+//     } else {
+//        var hint = guess < numberToGuess ? "higher" : "lower";
+//       document.getElementById("message").innerHTML =
+//         "Sorry, that was incorrect. Guess " +
+//         hint +
+//         ". You have " +
+//         guessesAllowed +
+//         " guesses left.";
+//     }
+//   }
+// }
+
+    </script>
+  </body>
+</html>

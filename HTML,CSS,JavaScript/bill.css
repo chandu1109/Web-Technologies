@@ -1,0 +1,92 @@
+ body,select,input[type="text"],textarea{
+      font-weight: bold;
+      text-transform: uppercase;
+/*      background-color:#10101E ;*/
+  background-image: url('Images/img22.jpg');
+  background-size: cover;
+      color: #fff;
+    }
+    table,
+    tr,
+    td,th {
+      border: 1px solid ghostwhite;
+      padding: 2px;
+      border-collapse: collapse;
+      padding: 25px;
+      margin-top: 30px;
+      margin: 0 auto;
+
+
+    }
+
+    table
+    {
+      background-color:#10101E ;
+      /*border-radius: 30px;
+       background-image: url('Images/img22.jpg');
+  back*/ground-size: cover;
+      height: 40%;
+      width: 60%;
+      scroll-behavior: smooth;
+      
+    }
+
+    .pricelist {
+      text-align: center;
+    }
+
+    .mybutton {
+      background-color: #4CAF50;
+      opacity: 0.9;
+
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      border: none;
+      display: inline-block;
+      font-size: 16px;
+
+      cursor: pointer;
+      background-color: #555555;
+      border-radius: 4px;
+    }
+
+    #entrybox {
+      text-align: center;
+      width: 25%;
+      height: 43px;
+      margin-left: 5px;
+      border: 2px solid #b4b39d;
+      border-radius: 6px;
+      background-color: black;
+    }
+
+    .bill {
+      margin-left: 23%;
+      margin-right: 20%;
+
+    }
+
+    .bill1 {
+      margin-left: 25%;
+      margin-right: 15%;
+
+    }
+
+    #sf {
+      height: 48px;
+      border: 2px solid #b4b39d;
+      text-align: center;
+      border-radius: 4px;
+      cursor: pointer;
+      background-color: black;
+    }
+
+    .bill2 {
+      margin-left: 57%;
+      position: relative;
+    }
+     .bill3 {
+      margin-left: 36%;
+      position: absolute;
+    }
