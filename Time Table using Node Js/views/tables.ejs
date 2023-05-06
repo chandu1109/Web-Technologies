@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <style>
+      
+      body,html
+      {
+         padding: 0px;
+         margin:0px;
+         background-color: #F5F5F5;
+      }
+      
+       li
+       {
+        padding-right:5px;
+        padding-left:5px;
+       }
+        a
+       {
+        text-decoration: none;
+       }
+       .b2
+       {
+        padding-top: 10px;
+       }
+       .b2 tr,td
+       {
+        padding:10px;
+       }
+       .ex{
+        margin-left: 430px;
+       }
+       .ex1{
+        border: 1px solid black;
+        margin-left: 50px;
+        width: 90%;
+        margin-top: 10px;
+        border-radius: 10px;
+        text-align: center;
+        background-color: white;
+       }
+       .ex2{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-left:550px;
+       }
+
+      
+input[type=submit]
+{
+  padding:12px 12px 12px 12px;
+  background-color: #04AA6D;
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+  border-radius: 13px;
+  border: none;
+  cursor: pointer;
+}
+input[type=submit]:hover{
+  background-color: royalblue;
+}
+.ex{
+  padding:25px 15px 15px 15px;
+  border: 0px solid black;
+}
+td label{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.ex select
+{
+  cursor: pointer;
+  padding: 12px 8px 12px 2px;
+  margin-right: 10px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 17px;
+  border-radius: 10px;
+}
+header {
+	
+	display: flex;
+	align-items: center;
+	justify-content:space-between;
+	background:#1876f2;
+	padding: 5px 5%;
+	position: sticky	;
+	top: -10px;
+	z-index: 100;
+	border-radius:10px;
+}
+.logo
+
+{
+    height: 70px;
+	width: 120px;
+	margin-top:5px;
+	margin-bottom: 10px;
+	margin-right: 45px;
+	border-radius: 25px;
+	cursor: pointer;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    margin-right: 5px;
+    padding: 0;
+}
+
+.menu li {
+    margin-left: 10px;
+}
+
+.menu li a {
+	font-family:'Consolas';
+	font-size:18px;
+	background-color:#10101E;
+    color: #fff;
+    text-decoration: none;
+    padding: 13px 15px 13px 15px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.menu li a:hover {
+    background-color:#04AA6D;
+}
+hr{
+  margin-left: 120px;
+  width: 80%;
+  border: 1px solid black;
+}
+   </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo" align="center">
+        <img src="/OIP" class="logo">
+        
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="/login">Login</a></li>
+          </ul>
+          
+        </div>
+      </header>
+    
+      <div class = "b2">
+        <form action="" method = "post">
+               <table class="ex">
+                <tr>
+                    <td><label for="Year">Year</label></td>
+                    <td>
+                     <select name="Year" id="year" style="width: 150px;">
+                       <option value="0">Select the Year</option>
+                    <option value="1">1 year</option>
+                     <option value="2">2 year</option>
+                     <option value="3">3 year</option>
+                      <option value="4">4 year</option>
+                      </select></td>
+                      <td><label for="Section">Section</label></td>
+                      <td>
+                       <select name="Section" id="Section" style="width: 150px;">
+                         <option value="0">Select the Section</option>
+                      <option value="A">A Section</option>
+                       <option value="B">B Section</option>
+                       <option value="C">C Section</option>
+                        </select></td>
+                        <br>
+                        <td>
+                            <input type="submit" name = "submit" value = "submit">
+                        </td>
+                </tr>
+               </table>
+        </form>
+      </div>
+      <br>
+     <div>
+        <h1 class="ex2">Timetable for <%= Year %> - <%= Section %></h1>
+        <hr>
+        <br>
+    <table border = 1 class="ex1" style = "border-collapse:collapse">
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>8:40 - 9:30</th>
+          <th>9:30 - 10:20</th>
+          <th>10:20 - 11:10</th>
+          <th>11:10 - 12:00</th>
+          <th>12:00 - 12:50</th>
+          <th>12:50 - 01:40</th>
+          <th>01:40 - 02:30</th>
+          <th>02:30 - 03:20</th>
+          <th>03:20 - 04:10</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% for (let i = 0; i < timetable.length; i++) { %>
+          <tr>
+            <td><%= timetable[i].Day %></td>
+            <td><%= timetable[i].Period1 %></td>
+            <td><%= timetable[i].Period2 %></td>
+            <td><%= timetable[i].Period3 %></td>
+            <td><%= timetable[i].Period4 %></td>
+            <td>Lunch Break</td>
+            <td><%= timetable[i].Period5 %></td>
+            <td><%= timetable[i].Period6 %></td>
+            <td><%= timetable[i].Period7 %></td>
+            <td><%= timetable[i].Period8 %></td>
+          </tr>
+        <% } %>
+      </tbody>
+    </table>
+     </div>     
+      
+  </body>
+</html>

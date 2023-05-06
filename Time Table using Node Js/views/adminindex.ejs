@@ -1,0 +1,150 @@
+<html>
+<head>
+    <style>
+      body,html 
+      {
+        height:100%;
+        width:100%;
+        padding:0px;
+        margin:0px;
+      }
+    .b1 {
+       height: 10%;
+       width: 100%;
+       margin:0px;
+       padding:0px;
+       overflow: hidden;
+       background-color: #4267B2;
+}
+    .b1  ol li
+    {
+
+       display: inline-block;
+    }
+    /* .b1 nav
+    {
+      float: right;
+    } */
+    nav {
+      background-color: #4267B2;
+      overflow: hidden;
+      float: right;
+    }
+
+    nav a {
+     
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 2px 16px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    .b2
+    {
+      height: 90%;
+      width:100%;
+  
+      padding: 0px;
+      margin: 0px;
+    }
+    .b1 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline;
+  height: 65px;
+  width: 95px;
+}
+header {
+	
+	display: flex;
+	align-items: center;
+	justify-content:space-between;
+	background:#1876f2;
+	padding: 5px 5%;
+	position: sticky	;
+	top: -10px;
+	z-index: 100;
+	border-radius:10px;
+}
+.logo
+
+{
+    height: 70px;
+	width: 120px;
+	margin-top:5px;
+	margin-bottom: 10px;
+	margin-right: 45px;
+	border-radius: 25px;
+	cursor: pointer;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    margin-right: 5px;
+    padding: 0;
+}
+
+.menu li {
+    margin-left: 10px;
+}
+
+.menu li a {
+	font-family:'Consolas';
+	font-size:18px;
+	background-color:#10101E;
+    color: #fff;
+    text-decoration: none;
+    padding: 13px 15px 13px 15px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.menu li a:hover {
+    background-color:whitesmoke;
+    color: black;
+    font-weight: bold;
+}
+
+    </style>
+</head>
+<body>
+  <header>
+    <div class="logo" align="center">
+      <img src="/OIP" class="logo">
+    </div>
+      <div class="menu">
+        <ul>
+          <li><a href="/a1faculty" target="bottom">Add Faculty</a></li>
+          <li><a href="/a1table" target="bottom">Add Time Table</a></li>
+          <li><a href="/a1sub" target="bottom">Add Subject</a></li>
+          <li><a href="/logout">Logout</a></li>
+          
+        </ul>
+        </div>
+    </header>
+  <!-- <div class = "b1">
+       <img src="/OIP" alt="">
+       <nav>
+         <ol>
+           <li><a href="/a1faculty" target = "bottom">Add Faculty</li>
+            <li><a href="/a1table" target = "bottom">Add Time Table</a></li>
+             <li><a href="/a1sub" target = "bottom">Assign Subjects</a></li>
+             
+             
+             <li><a href="/logout">Logout</a></li>
+         </ol>
+       </nav>
+  </div> -->
+  <div class = "b2">
+       <iframe src="/a1faculty" frameborder="0" height="100%" width="100%" name = "bottom"></iframe>
+  </div>
+  </body>
+
+</html>

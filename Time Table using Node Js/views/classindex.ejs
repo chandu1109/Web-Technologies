@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <style>
+      body,html
+      {
+         padding: 0px;
+         margin:0px;
+         height: 100%;
+         width: 100%;
+         background-color: #F5F5F5;
+        
+      }
+       .b5
+       {
+        width:100%;
+        height:85%;
+       }
+       .b2
+       {
+        padding-top: 10px;
+       }
+       .b2 tr,td
+       {
+        padding:10px;
+       }
+       .ex{
+        margin-left: 430px;
+       }
+       table 
+       {
+        margin:auto;
+       }
+       
+       .ex2{
+        margin-left: 50px;
+        text-align: center;
+       }
+       .b1 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline;
+  height: 65px;
+  width: 100px;
+}
+header {
+	
+	display: flex;
+	align-items: center;
+	justify-content:space-between;
+	background:#1876f2;
+	padding: 5px 5%;
+	position: sticky	;
+	top: -10px;
+	z-index: 100;
+	border-radius:10px;
+}
+.logo
+
+{
+    height: 70px;
+	width: 120px;
+	margin-top:5px;
+	margin-bottom: 10px;
+	margin-right: 45px;
+	border-radius: 25px;
+	cursor: pointer;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    margin-right: 5px;
+    padding: 0;
+}
+
+.menu li {
+    margin-left: 10px;
+}
+
+.menu li a {
+	font-family:'Consolas';
+	font-size:18px;
+	background-color:#10101E;
+    color: #fff;
+    text-decoration: none;
+    padding: 13px 15px 13px 15px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.menu li a:hover {
+  cursor: pointer;
+    background-color:white;
+    color: black;
+}
+table{
+  margin-left: 60px;
+  margin-right: 60px;
+}
+td
+{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h1{
+  cursor: pointer;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+hr{
+  margin-left: 160px;
+  width: 80%;
+  border: 1px solid black;
+}
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo" align="center">
+        <img src="/OIP" class="logo">
+        
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a  onclick="f()">View Timetable</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="/logout">Logout</a></li>
+          </ul>
+          
+        </div>
+      </header>
+     
+         <div class = "b2">
+          <h1  class="ex2">Timetable for <%= name %></h1>
+          <hr>
+          <br>
+          <br>
+      <table border = 2 style = "border-collapse:collapse">
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>8:40 - 9:30</th>
+            <th>9:30 - 10:20</th>
+            <th>10:20 - 11:10</th>
+            <th>11:10 - 12:00</th>
+            <th>12:00 - 12:50</th>
+            <th>12:50 - 01:40</th>
+            <th>01:40 - 02:30</th>
+            <th>02:30 - 03:20</th>
+            <th>03:20 - 04:10</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% for (let i = 0; i < results.length; i++) { %>
+            <tr>
+              <td><%=  results[i].Day %></td>
+              <td><%=  results[i].Period1 %></td>
+              <td><%=  results[i].Period2 %></td>
+              <td><%=   results[i].Period3 %></td>
+              <td><%=   results[i].Period4 %></td>
+              <td>Lunch Break</td>
+              <td><%=  results[i].Period5 %></td>
+              <td><%=  results[i].Period6 %></td>
+              <td><%=   results[i].Period7 %></td>
+              <td><%=  results[i].Period8 %></td>
+            </tr>
+          <% } %>
+        </tbody>
+      </table>
+       </div>     
+        
+    
+  </body>
+</html>

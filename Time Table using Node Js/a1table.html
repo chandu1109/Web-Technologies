@@ -1,0 +1,285 @@
+<html>
+    <head>
+     <style>
+      body{
+       background-color: 	#F5F5F5;
+     }
+      h1
+      {
+         text-align: center;
+         color: blue;
+         font-family:Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .b1
+      {
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,1);
+        margin:auto;
+        width:50%;
+        border:2px solid #10101e;
+        margin-top: 50px;
+        
+        padding-top: 10px;
+        padding-bottom: 10px;
+       
+        background-color:white;
+        border-radius: 15px;
+      }
+      tr,td
+      {
+         padding: 10px;
+      }
+      .ex{
+        margin-left:200px;
+      }
+      type[submit]{
+         display: block;
+         margin: auto;
+      }
+      hr{
+         margin-left: 60px;
+  width: 80%;
+  border: 1px solid black;
+      }
+      .ex select
+{
+  cursor: pointer;
+  padding: 10px 8px 10px 2px;
+  margin-right: 10px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 16px;
+  border-radius: 10px;
+}
+td label
+{
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+input[type=submit]
+{
+   margin-top: 15px;
+   margin-left: 295px;
+  padding:10px 30px 10px 30px;
+  background-color: #04AA6D;
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+  border-radius: 13px;
+  border: 2px solid #10101e;
+  cursor: pointer;
+}
+input[type=submit]:hover{
+  background-color: royalblue;
+}
+     </style>
+    </head>
+     <body>
+
+        <div class = "b1">
+         <h1>Add Time Table</h1>
+         <hr>
+         <form action="" method = "post">
+            <table class="ex">
+              <td><label for="Year">Year</label></td>
+              <td>
+               <select name="Year" id="year" style="width: 150px;">
+                 <option value="0">Select the Year</option>
+              <option value="1">1 year</option>
+               <option value="2">2 year</option>
+               <option value="3">3 year</option>
+                <option value="4">4 year</option>
+                </select></td>
+              </tr>
+              <tr>
+                <td><label for="Section">Section</label></td>
+                <td>
+                 <select name="Section" id="Section" style="width: 150px;">
+                   <option value="0">Select the Section</option>
+                <option value="A">A Section</option>
+                 <option value="B">B Section</option>
+                 <option value="C">C Section</option>
+                  </select></td>
+            </tr>
+               <tr>
+                  <td><label for="Day">Day</label></td>
+                  <td>
+                   <select name="Day" id="Day" style="width: 150px;">
+                     <option value="0">Select the Day</option>
+                  <option value="Monday">MONDAY</option>
+                   <option value="Tuesday">TUESDAY</option>
+                   <option value="Wednesday">WEDNESDAY</option>
+                   <option value="Thrusday">THURSDAY</option>
+                   <option value="Friday">FRIDAY</option>
+                   <option value="Saturday">SATURDAY</option>
+                   <option value="--">FREE HOUR<option>
+                    </select></td>
+               </tr>
+              <tr>
+               <td><label for="Period1">Period1</label></td>
+               <td>
+                <select name="Period1" id="Period1" style="width: 150px;">
+              <option value="0">Select the subject</option>
+               <option value="WT">WT</option>
+                <option value="OOSE">OOSE</option>
+                <option value="ML">ML</option>
+                <option value="NNDL">NNDL</option>
+                <option value="ITRE">ITRE</option>
+                <option value="CNS">CNS</option>
+                <option value="QA">QA</option>
+                <option value="VA">VA</option>
+                <option value="OOSE/WT LAB">OOSE/WT LAB</option>
+                <option value="COUNCELLING">COUNCELLING</option>
+               <option value="LIBRARY">LIBRARY</option>
+               <option value="SPORTS">SPORTS</option>
+               <option value="--">FREE HOUR<option>
+                 </select></td>
+              </tr>
+              <tr>
+               <td><label for="Period2">Period2</label></td>
+               <td>
+                <select name="Period2" id="Period2" style="width: 150px;">
+                  <option value="0">Select the subject</option>
+                  <option value="WT">WT</option>
+                  <option value="OOSE">OOSE</option>
+                  <option value="ML">ML</option>
+                  <option value="NNDL">NNDL</option>
+                  <option value="ITRE">ITRE</option>
+                  <option value="CNS">CNS</option>
+                  <option value="QA">QA</option>
+                  <option value="VA">VA</option>
+                  <option value="OOSE/WT LAB">OOSE/WT LAB</option>
+                  <option value="COUNCELLING">COUNCELLING</option>
+                 <option value="LIBRARY">LIBRARY</option>
+                 <option value="SPORTS">SPORTS</option>
+                 <option value="--">FREE HOUR<option>
+                 </select></td>
+              </tr>
+              <tr>
+               <td><label for="Period3">Period3</label></td>
+               <td>
+                <select name="Period3" id="Period3" style="width: 150px;">
+                  <option value="0">Select the subject</option>
+                  <option value="WT">WT</option>
+                  <option value="OOSE">OOSE</option>
+                  <option value="ML">ML</option>
+                  <option value="NNDL">NNDL</option>
+                  <option value="ITRE">ITRE</option>
+                  <option value="CNS">CNS</option>
+                  <option value="QA">QA</option>
+                  <option value="VA">VA</option>
+                  <option value="OOSE/WT LAB">OOSE/WT LAB</option>
+                  <option value="COUNCELLING">COUNCELLING</option>
+                 <option value="LIBRARY">LIBRARY</option>
+                 <option value="SPORTS">SPORTS</option>
+                 <option value="--">FREE HOUR<option>
+                 </select></td>
+              </tr>
+              <tr>
+               <td><label for="Period4">Period4</label></td>
+               <td>
+                <select name="Period4" id="Period4" style="width: 150px;">
+                  <option value="0">Select the subject</option>
+                  <option value="WT">WT</option>
+                  <option value="OOSE">OOSE</option>
+                  <option value="ML">ML</option>
+                  <option value="NNDL">NNDL</option>
+                  <option value="ITRE">ITRE</option>
+                  <option value="CNS">CNS</option>
+                  <option value="QA">QA</option>
+                  <option value="VA">VA</option>
+                  <option value="OOSE/WT LAB">OOSE/WT LAB</option>
+                  <option value="COUNCELLING">COUNCELLING</option>
+                 <option value="LIBRARY">LIBRARY</option>
+                 <option value="SPORTS">SPORTS</option>
+                 <option value="--">FREE HOUR<option>
+                 </select></td>
+              </tr>
+              <tr>
+               <td><label for="Period5">Period5</label></td>
+               <td>
+                <select name="Period5" id="Period5" style="width: 150px;">
+                  <option value="0">Select the subject</option>
+                  <option value="WT">WT</option>
+                  <option value="OOSE">OOSE</option>
+                  <option value="ML">ML</option>
+                  <option value="NNDL">NNDL</option>
+                  <option value="ITRE">ITRE</option>
+                  <option value="CNS">CNS</option>
+                  <option value="QA">QA</option>
+                  <option value="VA">VA</option>
+                  <option value="OOSE/WT LAB">OOSE/WT LAB</option>
+                  <option value="COUNCELLING">COUNCELLING</option>
+                 <option value="LIBRARY">LIBRARY</option>
+                 <option value="SPORTS">SPORTS</option>
+                 <option value="--">FREE HOUR<option>
+                 </select></td>
+              </tr>
+              <tr>
+               <td><label for="Period6">Period6</label></td>
+               <td>
+                <select name="Period6" id="Period6" style="width: 150px;">
+                  <option value="0">Select the subject</option>
+                  <option value="WT">WT</option>
+                  <option value="OOSE">OOSE</option>
+                  <option value="ML">ML</option>
+                  <option value="NNDL">NNDL</option>
+                  <option value="ITRE">ITRE</option>
+                  <option value="CNS">CNS</option>
+                  <option value="QA">QA</option>
+                  <option value="VA">VA</option>
+                  <option value="OOSE/WT LAB">OOSE/WT LAB</option>
+                  <option value="COUNCELLING">COUNCELLING</option>
+                 <option value="LIBRARY">LIBRARY</option>
+                 <option value="SPORTS">SPORTS</option>
+                 <option value="--">FREE HOUR<option>
+                 </select></td>
+              </tr>
+              <tr>
+               <td><label for="Period7">Period7</label></td>
+               <td>
+                <select name="Period7" id="Period7" style="width: 150px;">
+                  <option value="0">Select the subject</option>
+                  <option value="WT">WT</option>
+                  <option value="OOSE">OOSE</option>
+                  <option value="ML">ML</option>
+                  <option value="NNDL">NNDL</option>
+                  <option value="ITRE">ITRE</option>
+                  <option value="CNS">CNS</option>
+                  <option value="QA">QA</option>
+                  <option value="VA">VA</option>
+                  <option value="OOSE/WT LAB">OOSE/WT LAB</option>
+                  <option value="COUNCELLING">COUNCELLING</option>
+                 <option value="LIBRARY">LIBRARY</option>
+                 <option value="SPORTS">SPORTS</option>
+                 <option value="--">FREE HOUR<option>
+                 </select></td>
+              </tr>
+              <tr>
+               <td><label for="Period8">Period8</label></td>
+               <td>
+                <select name="Period8" id="Period8" style="width: 150px;">
+                  <option value="0">Select the subject</option>
+                  <option value="WT">WT</option>
+                  <option value="OOSE">OOSE</option>
+                  <option value="ML">ML</option>
+                  <option value="NNDL">NNDL</option>
+                  <option value="ITRE">ITRE</option>
+                  <option value="CNS">CNS</option>
+                  <option value="QA">QA</option>
+                  <option value="VA">VA</option>
+                  <option value="OOSE/WT LAB">OOSE/WT LAB</option>
+                  <option value="COUNCELLING">COUNCELLING</option>
+                 <option value="LIBRARY">LIBRARY</option>
+                 <option value="SPORTS">SPORTS</option>
+                 <option value="--">FREE HOUR<option>
+                 </select></td>
+              </tr>
+              
+            </table>
+            <hr>
+            <tr>
+               <td><input type="submit" name='submit'value = "Submit"></td>
+              </tr>
+         </form>
+        </div>
+</body>
+</html>

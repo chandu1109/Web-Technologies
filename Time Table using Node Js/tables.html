@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <style>
+      body,html
+      {
+         padding: 0px;
+         margin:0px;
+         background-color: #F5F5F5;
+      }
+      /* .b1 {
+         height: auto;
+         width: 100%;
+         border: 1px solid;
+         overflow: hidden;
+         background-color: #4267B2;
+        }
+      .b1  ol li
+      {
+
+         display: inline-block;
+      }
+      nav {
+        background-color: #4267B2;
+        overflow: hidden;
+        float: right;
+      }
+
+      nav a {
+       
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 2px 16px;
+        text-decoration: none;
+      }
+
+      nav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      /* .b1 nav
+      {
+        float: right;
+      } */
+       /* li
+       {
+        padding-right:5px;
+        padding-left:5px;
+       }
+       .b1 img {
+        position: absolute;
+        top: 0;
+         left: 0;
+        display: inline;
+         height: 55px;
+        width: 95px;
+            } */
+        a
+       {
+        text-decoration: none;
+       } */
+       .b2
+       {
+        padding-top: 20px;
+       }
+       .b2 tr,td
+       {
+        padding:10px;
+       }
+       .ex{
+        margin-left: 430px;
+       }
+
+       
+input[type=submit]
+{
+  padding:12px 12px 12px 12px;
+  background-color: #04AA6D;
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+  border-radius: 13px;
+  border: none;
+  cursor: pointer;
+}
+input[type=submit]:hover{
+  background-color: royalblue;
+}
+.b2{
+  background-color: white;
+  height: 0;
+  width: 0;
+}
+.ex{
+  padding:25px 15px 15px 15px;
+  border: 0px solid black;
+}
+td label{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.ex select
+{
+  cursor: pointer;
+  padding: 12px 8px 12px 2px;
+  margin-right: 10px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 17px;
+  border-radius: 10px;
+}
+header {
+	
+	display: flex;
+	align-items: center;
+	justify-content:space-between;
+	background:#1876f2;
+	padding: 5px 5%;
+	position: sticky	;
+	top: -10px;
+	z-index: 100;
+	border-radius:10px;
+    /* display: flex;
+    align-items: center;
+	position: relative;
+    justify-content: space-between;
+    padding: 10px 0 0 50px;
+    background-color: royalblue;
+    color: #fff;
+    font-size: 18px;
+	 */
+}
+.logo
+
+{
+    height: 70px;
+	width: 120px;
+	margin-top:5px;
+	margin-bottom: 10px;
+	margin-right: 45px;
+	border-radius: 25px;
+	cursor: pointer;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    margin-right: 5px;
+    padding: 0;
+}
+
+.menu li {
+    margin-left: 10px;
+}
+
+.menu li a {
+	font-family:'Consolas';
+	font-size:18px;
+	background-color:#10101E;
+    color: #fff;
+    text-decoration: none;
+    padding: 13px 15px 13px 15px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.menu li a:hover {
+    background-color:#04AA6D;
+}
+
+
+   </style>
+  </head>
+  <body>
+     <header>
+      <div class="logo" align="center">
+        <img src="/OIP" class="logo">
+        
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="/login">Login</a></li>
+          </ul>
+          
+        </div>
+      </header>
+      <div class = "b2">
+        <form action="" method = "post">
+               <table class="ex">
+                <tr>
+                    <td><label for="Year">Year:</label></td>
+                    <td>
+                     <select name="Year" id="year" style="width: 150px;">
+                       <option value="0">Select the Year</option>
+                    <option value="1">1 year</option>
+                     <option value="2">2 year</option>
+                     <option value="3">3 year</option>
+                      <option value="4">4 year</option>
+                      </select></td>
+                      <td><label for="Section">Section:</label></td>
+                      <td>
+                       <select name="Section" id="Section" style="width: 150px;">
+                         <option value="0">Select the Section</option>
+                      <option value="A">A Section</option>
+                       <option value="B">B Section</option>
+                       <option value="C">C Section</option>
+                        </select></td>
+                        <br>
+                        <td>
+                            <input type="submit" name = "submit" value = "submit">
+                        </td>
+                </tr>
+               </table>
+        </form>
+      </div>
+     
+      
+  </body>
+</html>

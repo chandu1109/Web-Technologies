@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <style>
+       body,html
+      {
+         padding: 0px;
+         margin:0px;
+      }
+      .b1 {
+         height: auto;
+         width: 100%;
+         border: 1px solid;
+         overflow: hidden;
+         background-color: rgb(14, 162, 225);
+      
+        }
+      
+      
+      li
+       {
+        padding-right:5px;
+        padding-left:5px;
+       }
+        a
+       {
+        text-decoration: none;
+       }
+       .b2{
+         margin-top: 18%;
+       }
+       .b3
+       {
+          display: flex;
+          margin:auto;
+          width:700px;
+          height:300px;
+          margin-right: 250px;
+          margin-top: 200px;
+          flex-direction: row;
+        row-gap: 20px;
+       }
+       .b4
+        {
+        flex:1;
+        padding-left: 10px;
+        flex-direction: row;
+        row-gap: 20px;
+        /* border-right:1px solid blue; */
+        }
+        .b5
+        {
+        flex:1;
+        /* border-right:1px solid blue; */
+        }
+        .b5
+        {
+        flex:1;
+        }
+.l:hover{
+  color:red;
+
+}
+
+ .button {
+        background-color: #4CAF50;
+        border: none;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 10px;
+        cursor: pointer;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+
+      }
+
+      /* Style the hover effect */
+      .button:hover {
+        background-color: rgb(14, 162, 225);
+      }
+      a:link, a:visited {
+  background-color: #3e8e41;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+#a:hover, a:active {
+  background-color: red;
+}
+*{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            scroll-behavior: smooth;
+            font-family: tahoma;
+        }
+		h1{
+			text-align:center;
+			position: fixed;
+			top:0;
+			left: 35%;
+			color:purple; 
+		}
+	
+		ul li{
+			margin: 5px;
+			padding: 5px;
+			}
+		ul li a{
+			color:white;
+			text-decoration:none;
+			font-size: 20px;
+			padding:5px; 
+		}
+	.content{
+		display: flex;
+		width: 500%;
+	}
+  header {
+	
+	display: flex;
+	align-items: center;
+	justify-content:space-between;
+	background:#1876f2;
+	padding: 5px 5%;
+	position: sticky	;
+	top: -10px;
+	z-index: 100;
+	border-radius:10px;
+}
+.logo
+
+{
+    height: 70px;
+	width: 120px;
+	margin-top:5px;
+	margin-bottom: 10px;
+	margin-right: 45px;
+	border-radius: 25px;
+	cursor: pointer;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    margin-right: 5px;
+    padding: 0;
+}
+
+.menu li {
+    margin-left: 10px;
+}
+
+.menu li a {
+	font-family:'Consolas';
+	font-size:18px;
+	background-color:#10101E;
+    color: #fff;
+    text-decoration: none;
+    padding: 13px 15px 13px 15px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.menu li a:hover {
+    background-color:#04AA6D;
+}
+.logo1
+{
+  height: 70px;
+	width: 120px;
+	margin-top:5px;
+	margin-bottom: 10px;
+	margin-right: 20px;
+  margin-left: 20px;
+	border-radius: 25px;
+	cursor: pointer;
+}
+   </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo" align="center">
+        <img src="/OIP" class="logo">
+        
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="/login">Login</a></li>
+          </ul>
+          
+        </div>
+      </header>
+      <div class="b2" align="center">
+        
+                 
+                 <a href="/adminlogin" class="button"><img src="/ad" class="logo1">Login in As Admin</a>
+                    
+         
+          
+                 <a href="/facultylogin" class="button"><img src="/f1" class="logo1">Login in As Faculty</a>
+                
+
+         
+         
+       
+      </div>
+  </body>
+</html>

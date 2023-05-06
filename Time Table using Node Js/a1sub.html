@@ -1,0 +1,136 @@
+<html>
+    <head>
+     <style>
+     body{
+       background-color: 	#F5F5F5;
+     }
+      h1
+      {
+         text-align: center;
+         color: blue;
+         font-family:Verdana, Geneva, Tahoma, sans-serif;
+      
+      }
+      .b1
+      {
+        border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,1);
+        margin:auto;
+        width:40%;
+        border:2px solid #4267B2;
+        margin-top: 60px;
+      
+        padding-top: 15px;
+        padding-bottom: 15px;
+      
+        background-color:white;
+        border-radius: 20px;
+
+      }
+      tr,td
+      {
+         padding: 10px;
+      }
+      .ex{
+        margin-left: 125px;
+      }
+      td label,.ex td
+{
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+      .ex select,td input[type=text]
+{
+  cursor: pointer;
+  padding: 10px 8px 10px 2px;
+  margin-right: 10px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 16px;
+  border-radius: 10px;
+}
+td input[type=text]
+{
+  text-align: center;
+}
+      hr{
+         margin-left: 15px;
+  width: 95%;
+  border: 1px solid black;
+      }
+      input[type=submit]
+{
+   margin-top: 15px;
+   margin-left: 220px;
+  padding:10px 30px 10px 30px;
+  background-color: #04AA6D;
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+  border-radius: 13px;
+  border: 2px solid #10101e;
+  cursor: pointer;
+}
+input[type=submit]:hover{
+  background-color: royalblue;
+}
+     </style>
+    </head>
+     <body>
+
+        <div class = "b1">
+         <h1>Assign Subject to a Faculty</h1>
+         <hr>
+         <form action="" method = "post">
+            <table class="ex">
+              <td><label for="Year">Year</label></td>
+              <td>
+               <select name="Year" id="year" style="width: 150px;">
+                 <option value="0">Select the Year</option>
+              <option value="1">1 year</option>
+               <option value="2">2 year</option>
+               <option value="3">3 year</option>
+                <option value="4">4 year</option>
+                </select></td>
+              </tr>
+              <tr>
+                <td><label for="Section">Section</label></td>
+                <td>
+                 <select name="Section" id="Section" style="width: 150px;">
+                   <option value="0">Select the Section</option>
+                <option value="A">A Section</option>
+                 <option value="B">B Section</option>
+                 <option value="C">C Section</option>
+                  </select></td>
+            </tr>
+            <tr>
+             <td><label for="Subject">Subject</label></td>
+             <td>
+              <select name="Subject" id="Subject" style="width: 150px;">
+            <option value="0">Select the subject</option>
+             <option value="WT">WT</option>
+              <option value="OOSE">OOSE</option>
+              <option value="ML">ML</option>
+              <option value="NNDL">NNDL</option>
+              <option value="ITRE">ITRE</option>
+              <option value="CNS">CNS</option>
+              <option value="SPORTS">SPORTS</option>
+              <option value="COUNCELLING">COUNCELLING</option>
+              <option value="VA">VA</option>
+              <option value="Qa">QA</option>
+             <option value="LIBRARY">LIBRARY</option>
+             <option value="OOSE/WT LAB">OOSE/WT LAB</option>
+               </select></td>
+            </tr>
+               <tr>
+                <td>Faculty</td>
+                <td><input type="text" name = "Faculty" placeholder="Enter Name" required = "required" style="width: 150px;"></td>
+               </tr>
+             
+            </table>
+            <tr>
+              <td><input type="submit" value = "Submit"></td>
+             </tr>
+         </form>
+        </div>
+
+     </body>
+</html>

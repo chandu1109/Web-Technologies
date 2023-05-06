@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <style>
+      body,html
+      {
+         padding: 0px;
+         margin:0px;
+         height: 100%;
+         width: 100%;
+         background-color: #F5F5F5;
+        
+      }
+      .b1 {
+       height: 100%;
+       width: 100%;
+      
+       overflow: hidden;
+}
+    .b1  ol li
+    {
+
+       display: inline-block;
+    }
+    /* .b1 nav
+    {
+      float: right;
+    } */
+    nav {
+      background-color: #4267B2;
+      overflow: hidden;
+      height: 100%;
+    }
+
+    nav a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 2px 16px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+       .b4
+       {
+        width:100%;
+        height:10%;
+        margin: 0px;
+       }
+       .b5
+       {
+        width:100%;
+        height:85%;
+       }
+       .b2
+       {
+        padding-top: 10px;
+       }
+       .b2 tr,td
+       {
+        padding:10px;
+       }
+       .ex{
+        margin-left: 430px;
+       }
+       table 
+       {
+        margin:auto;
+       }
+       
+       .ex2{
+        margin-left: 50px;
+        text-align: center;
+       }
+       .b2
+        {
+          margin:auto;
+          width:30%;
+          border:2px solid #4267B2;
+          margin-top: 200px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          padding-top: 10px;
+          padding-bottom: 10px;
+          /* padding-left: -10px; */
+          background-color:white;
+          border-radius: 15px;
+        }
+
+
+      tr,td
+      {
+         padding: 10px;
+      }
+      .ex{
+        margin-left: 65px;
+      }
+    </style>
+  </head>
+  <body>
+     
+     
+         <div class = "b4">
+          <div class = "b1">
+            <nav>
+              <ol>
+                <li><a  target = "right" onclick = "f()" >View Time Table</a></li>
+                <script>
+                  function f()
+                  {
+                    location.reload();
+                  }
+                </script>
+                 <li><a href="/cpass" target = "right">Change Password</a></li>
+               
+                  <li><a href="/logout">Logout</a></li>
+              </ol>
+            </nav>
+       </div>
+         </div>
+         <div class = "b2">
+            <h2 style = "text-align:center;">Sign in</h2>
+            <form action="" method = "post">
+               <table class="ex">
+                  <tr>
+                     <td>
+                        Email
+                     </td>
+                     <td>
+                        <input type="email" name = "email" required = "required">
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        New Password
+                     </td>
+                     <td>
+                        <input type="password" name="password" required = "required">
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <input type="submit" value = "submit" style="background-color:#4267B2;color:white;display:block;margin:auto;">
+                     </td>
+                  </tr>
+               </table>
+            </form>
+           </div>
+        
+    
+  </body>
+</html>

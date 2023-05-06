@@ -1,0 +1,73 @@
+<html>
+    <head>
+     <style>
+     body{
+       background-color: 	#F5F5F5;
+     }
+      h1
+      {
+         text-align: center;
+      }
+      .b1
+      {
+        margin:auto;
+        width:50%;
+        margin-top: 150px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        padding-top: 10px;
+        padding-bottom: 10px;
+        /* padding-left: -10px; */
+        background-color:white;
+        border-radius: 15px;
+      }
+      tr,td
+      {
+         padding: 10px;
+      }
+      .ex{
+        margin-left: 200px;
+      }
+      input[type=submit]{
+         align-items: center;
+         justify-content: center;
+      }
+     </style>
+    </head>
+     <body>
+
+        <div class = "b1">
+         <h1>Assign Class Teacher</h1>
+         <form action="" method = "post">
+            <table class="ex">
+              <tr>
+               <td>Faculty</td>
+               <td><input type="text" name = "Faculty" required = "required"></td>
+              </tr>
+               <tr>
+                  <td><label for="Year">Year</label></td>
+                  <td>
+                   <select name="Year" id="year" style="width: 100px;">
+                  <option value="1">1 year</option>
+                   <option value="2">2 year</option>
+                   <option value="3">3 year</option>
+                    <option value="4">4 year</option>
+                    </select></td>
+                  </tr>
+               <tr>
+                 <td><label for="Section">Year</label></td>
+                 <td>
+                  <select name="Section" id="Section" style="width: 100px;">
+                 <option value="A">A Section</option>
+                  <option value="B">B Section</option>
+                  <option value="C">C Section</option>
+                   </select></td>
+             </tr>
+              <tr>
+               <td><input type="submit" value = "submit"></td>
+              </tr>
+            </table>
+         </form>
+        </div>
+
+     </body>
+</html>

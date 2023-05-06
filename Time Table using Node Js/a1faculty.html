@@ -1,0 +1,109 @@
+<html>
+    <head>
+     <style>
+      body{
+       background-color: 	#F5F5F5;
+     }
+      h1
+      {
+         text-align: center;
+      }
+        .b1
+        {
+          margin:auto;
+          width:30%;
+          border:2px solid #4267B2;
+          margin-top: 200px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          padding-top: 10px;
+          padding-bottom: 10px;
+          /* padding-left: -10px; */
+          background-color:white;
+          border-radius: 15px;
+        }
+
+
+      tr,td
+      {
+         padding: 10px;
+      }
+      .ex{
+        margin-left: 65px;
+      }
+      #loginform{
+            background-color:whitesmoke;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 15px;
+            width: 400px;
+            height: 320px;
+            box-shadow: 0 0 20px rgba(0,0,0,1);
+        }
+        input[type=text],input[type=email]{
+            caret-color: orangered;
+            color:black;
+   font-weight: bold;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+              width: 70%;
+      padding: 12px 20px;
+      margin: 3px 0;
+      display: inline-block;
+      border: 3px solid #ccc;
+      border-radius: 15px;
+      box-sizing: border-box;
+      text-align: center;
+      margin-left: 15%;
+      margin-bottom: 15px;
+    }
+    h2{
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size:xx-large;
+        color:blue;
+        text-align: center;
+    }
+    input[type=submit] {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      width: 50%;
+      background-color:blue;
+      filter: contrast(1.75);
+      color: white;
+      padding: 15px 15px;
+      margin-left: 98px;
+      border: none;
+      border-radius: 10px;
+      cursor:pointer;
+    }
+    input[type=submit]:hover{
+      background-color: green;
+
+    }
+hr{
+  margin-left: 40px;
+  width: 80%;
+  border: 1px solid black;
+}
+::placeholder
+{
+   color:black;
+   font-weight: bold;
+}
+
+     </style>
+    </head>
+     <body>
+      <div id="loginform">
+         <form name="lgform"  method="POST">
+         <h2>Add Faculty</h2><hr>
+         <br>
+
+         <input type="text" name="name" placeholder="Enter Name" required = "required">
+         <input type="email" name="email" placeholder="Enter Email" required = "required">
+         <input type="submit" name="login" class="button
+         "value="Submit">
+         </form>
+     </div> 
+       
+     </body>
+</html>
