@@ -1,0 +1,25 @@
+{% include "layout.html" %}
+
+{% block content %}
+<div class = "div1">
+
+
+<div class="login-page">
+  <div class="form">
+
+      <form class="login-form" action="" method="post" enctype="multipart/form-data">
+      <input type="text"  name = "brand" placeholder="Brand" required = "required"/>
+      <input type="text" name = "product" placeholder="product" required = "required"/>
+       <input type="number" name = "quantity" placeholder="quantity" required = "required"/>
+      <input type="number" name = "price" placeholder="price" required = "required"/>
+      <input type="file" name="image" placeholder="image" required="required"/>
+
+
+      <button>Add</button>
+    </form>
+  </div>
+</div>
+  </div>
+{% endblock content %}
+
+{% include "footer.html" %}

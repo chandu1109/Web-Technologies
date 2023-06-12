@@ -1,0 +1,21 @@
+{% include "layout.html" %}
+
+{% block content %}
+<div class = "div1">
+
+
+<div class="login-page">
+  <div class="form">
+
+    <form class="login-form" action = "" method = "post">
+      <input type="text"  name = "email" placeholder="username" required = "required"/>
+      <input type="password" name = "password" placeholder="password" required = "required"/>
+      <button>Sign Up</button>
+      <p class="message">Already registered? <a href="/user_signin">Sign In</a></p>
+    </form>
+  </div>
+</div>
+  </div>
+{% endblock content %}
+
+{% include "footer.html" %}

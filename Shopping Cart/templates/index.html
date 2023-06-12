@@ -1,0 +1,59 @@
+{% include "layout.html" %}
+
+{% block content %}
+{% for result in data %}
+<div class="div2">
+    <div class="div3">
+        <p>{{ result[1] }}</p>
+    </div>
+    <div class="div4">
+        <p>{{ result[2] }}</p>
+    </div>
+    <div class="div4">
+        <img src="static/images/{{ result[5] }}" alt="Product Image" height="200px" width="200px">
+    </div>
+    <div class="div5">
+        <p>Quantity: {{ result[3] }}</p>
+    </div>
+    <div class="div6">
+        <p>₹ {{ result[4] }} </p>
+    </div>
+    {% if session['username'] != "admin@gmail.com" %}
+    <div class="div6">
+        <button id="{{ result[0] }}" class="btn btn-primary button1">Add to Cart</button>
+    </div>
+    {% endif %}
+</div>
+{% endfor %}
+{% endblock content %}
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $(".button1").on("click", function() {
+           {% if session['username']%}
+            var id = $(this).attr("id");
+            $.ajax({
+                url: "/cart",  // URL to send the data
+                method: "POST",
+                data: { id: id },  // Data to send in the request
+                success: function(response) {
+                    // Handle successful response
+                    alert("Item added to cart");
+                    location.reload();
+
+                },
+                error: function(xhr, status, error) {
+                    // Handle error
+                    console.log("Error: " + error);
+                }
+            });
+            {% else %}
+    alert("You need to sign in first");
+    {% endif %}
+        });
+    });
+
+</script>
+
+{% include "footer.html" %}

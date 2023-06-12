@@ -1,0 +1,38 @@
+{% include "layout.html" %}
+
+{% block content %}
+<div class = "cart">
+    <div class = "b1">
+        <p>Your Cart</p>
+        <table>
+        <tr>
+            <td>brand</td>
+            <td>product</td>
+            <td>quantity</td>
+            <td>price</td>
+        </tr>
+        {% for i in data %}
+         <tr>
+            <td>{{ i[1] }}</td>
+            <td>{{ i[2] }}</td>
+            <td>{{ i[3] }}</td>
+            <td>{{ i[4] }}</td>
+        </tr>
+        {% endfor %}
+
+    </table>
+         <form action = '/bill'>
+             <button type = 'submit'>Create Bill</button>
+         </form>
+    </div>
+
+</div>
+{% endblock content %}
+
+<script>
+    function addToCart(id) {
+        alert(id);
+    }
+</script>
+
+{% include "footer.html" %}

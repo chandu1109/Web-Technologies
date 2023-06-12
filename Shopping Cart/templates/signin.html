@@ -1,0 +1,30 @@
+{% include "layout.html" %}
+
+{% block content %}
+
+<div class = "div1">
+<div class="login-page">
+  <div class="form">
+
+    <form class="login-form" action = "" method = "POST">
+      {% with messages = get_flashed_messages() %}
+        {% if messages %}0
+        <div class="alert alert-danger" role="alert">
+            {% for message in messages %}
+            {{ message }}
+            {% endfor %}
+        </div>
+        {% endif %}
+        {% endwith %}
+      <input type="text" name = "email" placeholder="username" required = "required"/>
+      <input type="password" name = "password" placeholder="password" required = "required"/>
+      <button>Login</button>
+      <p class="message">New User? <a href="/user_signup">Create An Account</a></p>
+    </form>
+  </div>
+</div>
+  </div>
+  
+{% endblock content %}
+
+{% include "footer.html" %}
